@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scales=1.0">
+  <title>Login - Blog AESPI</title>
+    <link rel="icon"href="https://i52.servimg.com/u/f52/20/25/79/55/design10.png"/>
+  <!-- Outros [Null] -->
+  <!-- Icons -->
+  <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: start;
+    background: #fff;
+}
+.container{
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+}
+.container .tittle{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .tittle::before{
+    content: '';
+    position: absolute;
+    left: -7px;
+    bottom: 0px;
+    height: 38px;
+    width: 3px;
+    background: linear-gradient(135deg, #95f4ff, #1d8e92);
+}
+.container form .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.container select{
+    height: 45px;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 16px;
+    border: 1px solid #dedede;
+    transition: all 0.3s ease;
+    border-bottom-width: 3px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding-right: 45px;
+}
+form .details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #dedede;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 3px;
+    transition: all 0.3s ease;
+}
+.details .input-box input:focus,
+.details .input-box input:valid{
+    border-color: #4b4d4b;
+}
+.details .input-box .details_span{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+form .button{
+    height: 45px;
+    margin: 25px 0;
+    width: 100%;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: rgb(0, 100, 128);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+form .button input:hover{
+    border-bottom: 5px solid #0d839e;
+}
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .details::-webkit-scrollbar{
+        width: 100%;
+    }
+}
+
+/* CONFIGURAÇÕES ADICIONAIS */
+.texto_content{
+    position: absolute;
+    width: calc(100% - 68px);
+    transition: all 0.5s ease;
+    margin: 10px 0;
+    z-index: 1;
+}
+.container{
+    margin: auto;
+}
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    box-shadow: #fff;
+}
+.btnvoltar {
+  float: right;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  padding: 2px;
+  transition: 1s;
+}
+.btnvoltar:hover {
+  background: black;
+  border: none;
+  color: white;
+}
+</style>
+</head>
+<body><div class="texto_content">
+  <div class="container">
+
+    <div class="tittle">Login de acesso: <i class="fa-solid fa-pencil"></i></div>
+
+    <div class="card" id="post1">
+      <form id="fa-generated-form1" action="#">
+        <div class="details">
+          <div class="input-box">
+            <span class="details_span">Usuário</i></span>
+            <input id="campo1" type="text" placeholder="Insira seu login" required>
+          </div>
+          <div class="input-box">
+            <span class="details_span">Senha:</span>
+            <input id="campo2" type="password" placeholder="Digite sua senha" required>
+          </div>
+          <div class="button">
+            <input type="submit" value="Enviar">
+          </div>
+        </div>
+
+      <script>
+            var instance = new Date();
+            
+            var month =["Jan","Fev","Mar", "Abr","Mai","Jun", "Jul","Ago","Set", "Out","Nov","Dez"];
+            
+            var day = (!! instance.getDate().toString()[1]) ? instance.getDate() : '0' + instance.getDate();
+            var month_index = instance.getMonth();
+            var year = instance.getFullYear();
+            
+            var date = [ day, month[month_index], year ].join(" ");
+            
+            document.getElementById('campo5').value = date;
+         </script>
+      
+      <textarea style="display: none;" id="fa-generated-message1">[center][size=18][font=Poppins]Acesso liberado[/font][/size][/center]
+       
+      [b]Instrutor(a):[/b] {{campo2}} {{campo1}}
+      [b]TAG do(a) instrutor(a):[/b] {{campo3}}
+      [b]Recruta(s) aprovado(s):[/b] {{campo4}}
+      [b]Data da aplicação:[/b] {{campo5}}
+        
+        {{campo4}} [b][{{campo3}}][/b] {{campo5}}
+      </textarea>
+
+      <input type="hidden" id="fa-generated-title1" value="Instrução Inicial: {{campo4}}" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://forumeiros.github.io/assets/src/form-generator/form-replace.js" type="text/javascript"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.13/dist/sweetalert2.all.min.js"></script>
+      <script type="text/javascript">
+          (function($) {
+              'use strict';
+
+              $(function() {
+                  var $textarea = $('#fa-generated-message1');
+                  var $title = $('#fa-generated-title1');
+                  var $form = $('#fa-generated-form1');
+
+                  $form.on('submit', function(event) {
+
+                      if ($textarea.length === 0) {
+                          event.preventDefault();
+                          alert('[Erro Código 001 | Form Functions] Tente novamente!');
+                          return false;
+                      }
+
+                      $textarea.val($textarea.val().replace(/\{\{campo(\d+)\}\}/gi, function(text, match) {
+                          return $('#campo' + match).val();
+                      }));
+
+                      if ($title.length === 0) {
+                          return;
+                      }
+
+                      $title.val($title.val().replace(/\{\{campo(\d+)\}\}/gi, function(text, match) {
+                          return $('#campo' + match).val();
+                      }));
+                  });
+              });
+          }(jQuery));
+      </script>
+      <script type="text/javascript">
+          (function($) {
+              'use strict';
+
+              $(window).on('load', function() {
+                  $('#fa-generated-form1').on('submit', function(event) {
+                      event.preventDefault();
+                      $(this).find('button[type="submit"]').text('Postando...');
+                      setTimeout(function() {
+                          $.post('/post', {
+                              subject: $('#fa-generated-title1').val().trim(),
+                              t: 23,
+                              message: $('#fa-generated-message1').val().trim(),
+                              mode: 'reply',
+                              tid: $('[name="tid"]:first').val(),
+                              post: 1,
+                          }).done(function() {
+                              Swal.fire({
+                                  icon: 'success',
+                                  title: 'Postado com sucesso!',
+                                  footer: 'AESPI | 1º Periodo',
+       				  text: 'Logado com sucesso ®',
+                                  timer: 3000,
+                                  allowEscapeKey: false,
+                                  showConfirmButton: true,
+                                  timerProgressBar: false
+                              });
+        	
+                          }).fail(function() {
+                              Swal.fire({
+                                  icon: 'success',
+                                  title: 'Logado com sucesso ®',
+                                  text: 'Você está logado ao site! Seja bem-vindo!',
+                                  footer: 'AESPI | 1º Periodo',
+                              });
+                          });
+                      }, 600);
+                  });
+              });
+          }(jQuery));
+      </script>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://forumeiros.github.io/assets/src/form-generator/form-replace.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script>
+        $(document).ready(function(){
+            $('#select_options').on('change',function(){
+                $(".card").hide();
+                $("#" + $(this).val()).show();
+            }).change();
+        })
+</script>
+
+<script>    
+$(document).ready(function(){
+    $.jMaskGlobals = {translation: {
+        'D': {pattern: /[0-3]/},
+        'H': {pattern: /[0-2]/},
+        'M': {pattern: /[0-5]/},
+        'Y': {pattern: /[0-9]/},
+        'A': {pattern: /[A-Z]/},
+        'a': {pattern: /[a-z]/}
+    }}
+    $('.data_hora').mask('DY Aaa YYYY');
+
+    // ALTERA OS URLs, CARREGANDO VARIÁVEIS
+    var urlPar = window.location.search;
+    $("a").each(function(){
+        $(this).attr('href', $(this).attr('href') + urlPar)
+    })
+});
+</script>
+</body>
+</html>
